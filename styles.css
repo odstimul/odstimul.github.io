@@ -8,7 +8,7 @@ body {
 }
 
 .icon, .icon2 {
-  background: url("../img/camp 1.png") 0 0/100% 100% no-repeat;
+  background: url("camp 1.png") 0 0/100% 100% no-repeat;
   height: 40vh;
   width: 18%;
   position: absolute;
