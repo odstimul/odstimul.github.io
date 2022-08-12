@@ -50,12 +50,12 @@ body {
 }
 @media (max-width: 767px) {
   .section .section__table {
-    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1280));
+    font-size: calc(12px + 3.4 * ((100vw - 320px) / 1280));
   }
 }
 @media (min-width: 767px) {
   .section .section__table {
-    font-size: calc(10px + 4 * (100vw / 1280));
+    font-size: calc(12px + 2 * (100vw / 1280));
   }
 }
 .section .section__table tr {
@@ -68,11 +68,16 @@ body {
 @media (max-width: 450px) {
   .section .section__table tr th {
     padding: 3px 0;
+    color: white;
   }
 }
 .section .section__table tr td {
   border-top: 1px solid #444;
   background: white;
+  width: 15.5%;
+}
+.section .section__table tr .number {
+  width: 7%;
 }
 @media (max-width: 930px) {
   .section .section__table {
@@ -85,4 +90,28 @@ body {
   .section {
     width: 100%;
   }
+}
+.section .leader {
+  text-shadow: 0px 0px 1px red;
+  color: red;
+}
+.section .media {
+  text-shadow: 0px 0px 1px rgb(199, 0, 199);
+  color: rgb(199, 0, 199);
+}
+.section .clear {
+  text-shadow: 0px 0px 1px rgb(45, 45, 255);
+  color: rgb(59, 59, 255);
+}
+.section .eco {
+  text-shadow: 0px 0px 1px green;
+  color: green;
+}
+.section .food {
+  text-shadow: 0px 0px 7px rgb(255, 255, 0);
+  color: rgb(165, 165, 21);
+}
+.section .activite {
+  text-shadow: 0px 0px 3px rgb(255, 166, 0);
+  color: rgb(209, 137, 4);
 }
