@@ -8,7 +8,7 @@ body {
 }
 
 .icon, .icon2 {
-  background: url("camp 1.png") 0 0/100% 100% no-repeat;
+  background: url("../img/camp 1.png") 0 0/100% 100% no-repeat;
   height: 40vh;
   width: 18%;
   position: absolute;
@@ -41,9 +41,6 @@ body {
 .section .section__table {
   width: 50%;
   height: 98vh;
-  -webkit-box-shadow: inset 0 0 1px #444;
-          box-shadow: inset 0 0 1px #444;
-  background: rgba(5, 77, 172, 0.671);
   border-spacing: 0;
   font-family: sans-serif;
   border-radius: 30px;
@@ -60,6 +57,7 @@ body {
 }
 .section .section__table tr {
   text-align: center;
+  background: white;
 }
 .section .section__table tr th {
   padding: 3px 10px;
@@ -72,12 +70,34 @@ body {
   }
 }
 .section .section__table tr td {
-  border-top: 1px solid #444;
-  background: white;
+  border-top: 1px solid rgb(12, 12, 12);
   width: 15.5%;
+  font-size: 15px;
 }
 .section .section__table tr .number {
   width: 7%;
+  font-size: 13px;
+  background: rgba(5, 77, 172, 0.671);
+  color: white;
+}
+.section .section__table .section__table_bar {
+  background: rgba(5, 77, 172, 0.671);
+}
+.section .section__table .section__table_bar :first-child {
+  border-radius: 30px 0 0 0;
+}
+@media (max-width: 930px) {
+  .section .section__table .section__table_bar :first-child {
+    border-radius: 0;
+  }
+}
+.section .section__table .section__table_bar :last-child {
+  border-radius: 0 30px 0 0;
+}
+@media (max-width: 930px) {
+  .section .section__table .section__table_bar :last-child {
+    border-radius: 0;
+  }
 }
 @media (max-width: 930px) {
   .section .section__table {
@@ -114,4 +134,54 @@ body {
 .section .activite {
   text-shadow: 0px 0px 3px rgb(255, 166, 0);
   color: rgb(209, 137, 4);
+}
+.section .solider, .section .ecologic, .section .eng, .section .drone {
+  position: relative;
+}
+.section .solider::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../img/solider.png);
+  left: 1px;
+  top: 2px;
+}
+.section .ecologic::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../img/eco.png);
+  left: 1px;
+  top: 2px;
+}
+.section .eng::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../img/eng\ \(1\).png);
+  left: 1px;
+  top: 2px;
+}
+.section .drone::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../img/drone\ \(5\).png);
+  left: 1px;
+  top: 2px;
+}
+.section .solider :first-child {
+  font-weight: 700;
+}
+.section .second :first-child {
+  background: rgba(80, 96, 241, 0.767) !important;
+  font-weight: 700;
+}
+.section .third :first-child {
+  background: rgba(57, 68, 172, 0.767) !important;
+  font-weight: 700;
 }

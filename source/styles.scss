@@ -1,0 +1,168 @@
+@import 'scss-tools.scss';
+body{
+    background: radial-gradient(circle at 65% 15%, aqua, darkblue) no-repeat;
+    @media(max-width:930px){
+        margin: 0;
+    }
+}
+.icon,  .icon2{
+    background: url("../img/camp\ 1.png")0 0/100% 100% no-repeat;
+    height: 40vh;
+    width: 18%;
+    position: absolute;
+    left:5%;
+    top:5%;
+    
+    @media (max-width: 930px){
+        display: none;
+    }
+}
+.icon2{
+    left:75%;
+    top:55%;
+    transform: scale(-0.8, 0.8);
+}
+.section{
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+
+    .section__table{
+        width: 50%;
+        height: 98vh;
+        border-spacing: 0;
+        font-family:sans-serif;
+        border-radius: 30px;
+        @include f-size(14, 12);
+
+        tr{
+            text-align: center;
+            background: white;
+            th{
+                padding:3px 10px;
+                color: white;
+
+                @media(max-width:450px){
+                    padding:3px 0;
+                    color:white;
+                }
+            }
+
+            td{
+                border-top:1px solid rgb(12, 12, 12);
+                width: 15.5%;
+                font-size: 15px;
+            }
+            .number{
+                width: 7%;
+                font-size: 13px;
+                background: rgba(5, 77, 172, 0.671);
+                color:white;
+            }
+        }
+
+        .section__table_bar{
+            background: rgba(5, 77, 172, 0.671);
+        }
+        .section__table_bar :first-child{
+            border-radius: 30px 0 0 0;
+            @media(max-width:930px){border-radius: 0;}
+        }
+        .section__table_bar :last-child{
+            border-radius: 0 30px 0 0;
+            @media(max-width:930px){border-radius: 0;}
+        }
+
+        @media(max-width:930px){
+            width: 100%;
+            height: 100vh;
+            border-radius: 0;
+        }
+    }
+    @media(max-width:930px){
+        width: 100%;
+    }
+
+    .leader{
+        text-shadow: 0px 0px 1px red;
+        color:red;
+    }
+    .media{
+        text-shadow: 0px 0px 1px rgb(199, 0, 199);
+        color:rgb(199, 0, 199);
+    }
+    .clear{
+        text-shadow: 0px 0px 1px rgb(45, 45, 255);
+        color:rgb(59, 59, 255);
+    }
+    .eco{
+        text-shadow: 0px 0px 1px green;
+        color:green;
+    }
+    .food{
+        text-shadow: 0px 0px 7px rgb(255, 255, 0);
+        color:rgb(165, 165, 21);
+    }
+    .activite{
+        text-shadow: 0px 0px 3px rgb(255, 166, 0);
+        color:rgb(209, 137, 4);
+    }
+
+    .solider, .ecologic, .eng, .drone{
+        position: relative;
+    }
+    .solider::after{
+        position: absolute;
+        content:'';
+        width: 16px;
+        height: 16px;
+        background: url(../img/solider.png);
+        left:1px;
+        top:2px;
+    }
+    .ecologic::after{
+        position: absolute;
+        content:'';
+        width: 16px;
+        height: 16px;
+        background: url(../img/eco.png);
+        left:1px;
+        top:2px;
+    }
+    .eng::after{
+        position: absolute;
+        content:'';
+        width: 16px;
+        height: 16px;
+        background: url(../img/eng\ \(1\).png);
+        left:1px;
+        top:2px;
+    }
+    .drone::after{
+        position: absolute;
+        content:'';
+        width: 16px;
+        height: 16px;
+        background: url(../img/drone\ \(5\).png);
+        left:1px;
+        top:2px;
+    }
+
+    .solider :first-child{
+        //border-right:7px double green;
+        font-weight: 700;
+    }
+    .second :first-child{
+        //border-right:7px double rgb(223, 13, 212);
+        background: rgba(80, 96, 241, 0.767) !important;
+        font-weight: 700;
+    }
+    .third :first-child{
+        //border-right:7px double rgb(12, 35, 243);
+        background: rgba(57, 68, 172, 0.767) !important;
+        font-weight: 700;
+    }
+
+}
+
